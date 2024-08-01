@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <button type="submit">Login</button>
+            <div id="error-message"></div>
+        </form>
+    </div>
+
+    <div id="cake-container" style="display: none;">
+        <div id="cake">
+            <div id="cake-body">
+                <div id="top-layer"></div>
+                <div id="side-layer"></div>
+                <div id="candles">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sprinkles"></div>
+        </div>
+        <div id="wish" style="display: none;">Happy Birthday!</div>
+    </div>
+    <audio id="birthday-song" src="birthday_song.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
