@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function simulateBlowingCandles() {
     const flames = document.querySelectorAll('.flame');
-    
+
     // Start glowing effect
     flames.forEach(flame => {
         flame.style.display = 'block';
