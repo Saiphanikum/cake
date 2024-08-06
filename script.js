@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
     const errorMessage = document.getElementById('error-message');
     const cakeContainer = document.getElementById('cake-container');
-    const birthdaySong = document.getElementById('birthday-song');
+    const blowCandlesPrompt = document.getElementById('blow-candles-prompt');
 
     loginForm.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (validUsernames.includes(username)) {
             loginForm.style.display = 'none';
             cakeContainer.style.display = 'block';
+            blowCandlesPrompt.style.display = 'block';
             simulateBlowingCandles();
         } else {
             errorMessage.textContent = 'Invalid username';
@@ -36,6 +37,6 @@ function simulateBlowingCandles() {
             flame.style.display = 'none';
         });
         document.getElementById('wish').style.display = 'block';
-        document.getElementById('birthday-song').play();
+        document.getElementById('blow-candles-prompt').style.display = 'none';
     }, 4000);
 }
